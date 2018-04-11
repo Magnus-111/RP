@@ -100,7 +100,7 @@ namespace Rejestrator
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                button1.Text = "Edytuj";
+                //button1.Text = "Edytuj";
             }
             else
             {
@@ -108,9 +108,25 @@ namespace Rejestrator
             }
         }
 
-        private void menuItem5_Click(object sender, EventArgs e)
+        private void pracujToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button3.PerformClick();
+        }
+
+        private void usuńToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button2.PerformClick();
+        }
+
+        private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dodajZadanieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            f2.Show();
         }
     }
 }
