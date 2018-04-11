@@ -94,7 +94,7 @@ namespace Rejestrator
 
         private void label3_TextChanged(object sender, EventArgs e)
         {
-            label3.Location = new Point((Width - label3.Size.Width - 12) / 2, label3.Location.Y);
+            label3.Location = new Point((Size.Width - label3.Size.Width - 12) / 2, label3.Location.Y);
         }
     }
 }

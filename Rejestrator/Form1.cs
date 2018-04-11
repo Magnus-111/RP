@@ -17,8 +17,15 @@ namespace Rejestrator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2(this);
-            f2.Show();
+            if (button1.Text == "Dodaj")
+            {
+                Form2 f2 = new Form2(this);
+                f2.Show();
+            }
+            else if (button1.Text == "Edytuj")
+            {
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,6 +94,23 @@ namespace Rejestrator
             {
                 button2.Enabled = true;
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                button1.Text = "Edytuj";
+            }
+            else
+            {
+                button1.Text = "Dodaj";
+            }
+        }
+
+        private void menuItem5_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

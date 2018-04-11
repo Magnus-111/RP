@@ -39,7 +39,8 @@
     <ManifestCertificateThumbprint>4AD26347C55A58201D5882EBDE59848E828BB384</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Rejestrator_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
